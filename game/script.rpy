@@ -28,6 +28,8 @@ define e = Character("Eileen")
 
 label start:
 
+    $ config.rollback_enabled = False
+
     jump beginning
 
     label nameMC:

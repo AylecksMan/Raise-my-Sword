@@ -12,6 +12,12 @@ label beginning:
 
 label aftername:
 
+    scene white with fade
 
+    scene office with fade
+
+    "..."
+
+    "This is the office"
 
     jump credits
