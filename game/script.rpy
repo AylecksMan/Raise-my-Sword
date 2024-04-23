@@ -51,6 +51,8 @@ label credits:
     scene bg room
 
     "yeah this is credits i swear"
+
+    "test Balls"
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
