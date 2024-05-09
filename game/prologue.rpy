@@ -38,7 +38,7 @@ label aftername:
 
     "One night after a long day at work."
 
-    ##TODO
+    ##TODO add alley bg image
 
     scene alley with fade
 
