@@ -38,6 +38,8 @@ label aftername:
 
     "One night after a long day at work."
 
+    ##TODO
+
     scene alley with fade
 
     mc "Man,,,{w} I'm so tired..."
