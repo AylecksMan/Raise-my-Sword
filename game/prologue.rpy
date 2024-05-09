@@ -20,4 +20,8 @@ label aftername:
 
     "This is the office"
 
+    "I work a normal 9-5 job. I pretty much just press buttons, "
+
+    "I work I pretty much just press buttons, "
+
     jump credits
