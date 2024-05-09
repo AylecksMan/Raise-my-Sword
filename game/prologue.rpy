@@ -6,7 +6,7 @@ label beginning:
 
     "the world is overrun with monsters."
 
-    "Someone must {w}... {w}Raise their Sword!"
+    "Someone must {w}... {w}Raise their Sword!!!!"
 
     jump nameMC
 

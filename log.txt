@@ -1,44 +1,45 @@
-2024-04-25 11:41:00 UTC
-Windows-10-10.0.22631
+2024-05-09 12:15:51 UTC
+Windows-10-10.0.22621
 Ren'Py 8.2.1.24030407
 
-Early init took 0.04s
-Loading error handling took 0.04s
-Loading script took 0.07s
-Loading save slot metadata took 0.03s
+Early init took 0.09s
+Loading error handling took 0.06s
+Loading script took 1.13s
+Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.11s
+Running init code took 0.15s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.07s
+Reloading save slot metadata took 0.01s
 Index archives took 0.00s
-Dump and make backups took 0.03s
+Backing up script files to 'C:\\Users\\Tienm\\AppData\\Roaming/RenPy/backups\\Raise-my-Sword':
+Dump and make backups took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.02s
-DPI scale factor: 1.250000
+Initial gc took 0.05s
+DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.14s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.04s
 Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.02s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.03s
 Running _start took 0.00s
-Interface start took 0.06s
+Interface start took 0.52s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1600)
+primary display bounds: (0, 0, 1920, 1200)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4060 Laptop GPU/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.61'
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon (TM) Graphics'
+Version: b'4.6.0 Compatibility Profile Context 24.3.1.240216'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2400, 1350) drawable=(2400, 1350)
+Screen sizes: virtual=(1920, 1080) physical=(1818, 1023) drawable=(1818, 1023)
 Maximum texture size: 4096x4096
