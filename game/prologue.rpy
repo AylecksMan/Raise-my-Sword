@@ -30,6 +30,20 @@ label aftername:
 
     "Every night, {w}monsters have been crawling out of the sewers and hunting humans."
 
+    "These have just been shown as missing person cases...{w} but I know the truth."
 
+    "I still remember the night I first saw them..."
+
+    scene black with fade
+
+    "One night after a long day at work."
+
+    scene alley with fade
+
+    mc "Man,,,{w} I'm so tired..."
+
+    mc "Why did they give me this mind-numbingly easy job?"
+
+    mc "I don't even use my brain!"
 
     jump chap1
