@@ -42,10 +42,51 @@ label aftername:
 
     scene alley with fade
 
+    play sound manimsotired
+
     mc "Man,,,{w} I'm so tired..."
+
+    play sound whydidtheygivemethis
 
     mc "Why did they give me this mind-numbingly easy job?"
 
+    play sound dontevenusebrain
+
     mc "I don't even use my brain!"
+
+    show slime with pixellate
+
+    "A Slime appears!"
+
+    mc "!!"
+
+    play sound holycow
+
+    mc "Holy Cow!"
+
+    play sound whatisthatblue
+
+    mc "What is that blue thing?"
+
+    play sound igottagetout
+
+    mc "I gotta get out of here"
+
+    show slime2 at left with moveinleft
+
+    show slime3 at right with moveinright
+    "Two more slimes appear!"
+
+    mc "Aww fudge!"
+
+    mc "Oh no, oh no, oh noooooooooo...."
+
+    mc "What am I going to do? :C"
+
+    "!!"
+
+    g "Hey kid, {w}it seems you are in trouble."
+
+    g ""
 
     jump chap1

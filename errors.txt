@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 39: expected end of line
-    stop music with fadeout
-               ^
+File "game/prologue.rpy", line 75: end of line expected.
+    show slime2 at left with moveinleft, pixellate
+                                       ^
+
+File "game/prologue.rpy", line 77: end of line expected.
+    show slime3 at right with moveinright, pixellate
+                                         ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Tue Apr 23 08:42:37 2024
+Mon May 13 08:45:55 2024
