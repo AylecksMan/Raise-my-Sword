@@ -1,0 +1,7 @@
+label chap1:
+
+    scene black with fade
+
+    mc "testing"
+
+    scene alley with fade
