@@ -89,4 +89,6 @@ label aftername:
 
     g "prepare to get poo-poo pee-peed!!!!"
 
+    mc "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+
     jump chap1

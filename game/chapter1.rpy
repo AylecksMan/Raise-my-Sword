@@ -4,10 +4,18 @@ label chap1:
 
     scene black with fade
 
-    mc "im getting angwy...!!!"
+    "..."
+    define mys = Character("Mysterious Voice")
+    mys "The power of the sword flows through you..."
+    mc "What the... "
+    mc "Who was that...? Where did that voice come from?"
+    mys "RAISE YOUR SWORD!!!"
+    "You feel a strange power course through your body..."
+    "...and a sword appears in your hand!"
 
     scene alley with fade
 
     jump battle_game_1
 
 label chap1_1:
+

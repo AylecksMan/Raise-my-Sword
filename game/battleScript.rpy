@@ -103,6 +103,8 @@ label battle_1_loop:
     if gronk_hp <= 0:
         if mc_hp <= 0:
             "Double KO"
+            "Recommencing battle..."
+            jump battle_game_1
 
         else:
             mc "night-night gronky-poo"
