@@ -87,6 +87,6 @@ label aftername:
 
     g "Hey kid, {w}it seems you are in trouble."
 
-    g ""
+    g "prepare to get poo-poo pee-peed!!!!"
 
     jump chap1

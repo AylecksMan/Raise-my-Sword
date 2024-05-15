@@ -8,3 +8,6 @@ label chap1:
 
     scene alley with fade
 
+    jump battle_game_1
+
+label chap1_1:
