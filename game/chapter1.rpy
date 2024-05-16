@@ -13,11 +13,34 @@ label chap1:
     "You feel a strange power course through your body..."
     "...and a sword appears in your hand!"
 
-    
 
     jump battle_game_1
 
 label chap1_1:
 
+    scene white with blinds
+    "*Shudders*"
+    scene office with fade
 
+    mc "Man, that was really scary."
+    "Someone walks up to you..."
+    s “ermmmm hey there, [mc]~!”
+    s “Hows it going??”
+    mc "erm... it's going-"
+    s “sooooo ermmmmmm yknow that skibbidy bar cafe that opened up nearby???~”
+    s “did you maybe wanna ermmm, go there together sometime??~”
 
+    menu:
+        "Sure?"
+            jump chap1suzancafe
+
+        "EWWWWWW! NO."
+            s "boo hoo hoo hoy!"
+
+    "Suzan runs off."
+    mc "Heheheha!"
+
+label walkhome:
+    "The work day ends, and you set off to walk back home."
+    "But halfway there, the streetlights begin to flicker violently."
+    ""

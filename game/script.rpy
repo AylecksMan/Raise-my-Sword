@@ -23,7 +23,7 @@
 
 define e = Character("Eileen")
 define g = Character("Gronk")
-
+define s = Character("Suzan")
 
 # The game starts here.
 
