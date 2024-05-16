@@ -13,7 +13,7 @@ label chap1:
     "You feel a strange power course through your body..."
     "...and a sword appears in your hand!"
 
-    scene alley with fade
+    
 
     jump battle_game_1
 

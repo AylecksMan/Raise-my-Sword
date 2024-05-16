@@ -60,7 +60,7 @@ label battle_game_1:
     "and then..."
     "You RAISE YOUR SWORD!!!"
 
-    msy "Heh, pretty cool sword huh? I bestowed it to you myself!"
+    mys "Heh, pretty cool sword huh? I bestowed it to you myself!"
 
     jump battle_1_loop
 

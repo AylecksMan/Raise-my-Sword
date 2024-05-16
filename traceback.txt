@@ -1,22 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/prologue.rpy", line 82, in script
-    jump chap1
-ScriptError: could not find label 'chap1'.
+  File "game/battleScript.rpy", line 63, in script
+    msy "Heh, pretty cool sword huh? I bestowed it to you myself!"
+Exception: Sayer 'msy' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/prologue.rpy", line 82, in script
-    jump chap1
-  File "C:\Users\Quick\OneDrive\Documents\renpy-8.2.1-sdk\renpy\ast.py", line 1698, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\Quick\OneDrive\Documents\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'chap1'.
+  File "game/battleScript.rpy", line 63, in script
+    msy "Heh, pretty cool sword huh? I bestowed it to you myself!"
+  File "D:\Renpy Engine\renpy-8.0.3-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "D:\Renpy Engine\renpy-8.0.3-sdk\renpy\ast.py", line 575, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "D:\Renpy Engine\renpy-8.0.3-sdk\renpy\ast.py", line 464, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'msy' is not defined.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
 Raise my Sword 1.0
-Mon May 13 08:49:07 2024
+Wed May 15 20:40:11 2024

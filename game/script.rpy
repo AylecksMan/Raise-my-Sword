@@ -48,6 +48,9 @@ label start:
 
                         "Let me rethink this...":
                             jump nameMC
+
+                        "Jump to fight":
+                            jump chap1
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
