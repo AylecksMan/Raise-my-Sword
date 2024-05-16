@@ -84,6 +84,8 @@ label aftername:
 
     "!!"
 
+    show gronk with pixellate
+
     g "Hey kid, {w}it seems you are in trouble."
 
     g "prepare to get poo-poo pee-peed!!!!"
