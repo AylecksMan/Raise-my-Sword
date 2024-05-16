@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/prologue.rpy", line 75: end of line expected.
-    show slime2 at left with moveinleft, pixellate
-                                       ^
-
-File "game/prologue.rpy", line 77: end of line expected.
-    show slime3 at right with moveinright, pixellate
-                                         ^
+File "game/script.rpy", line 55: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "jump chap1.1"
+                  ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Mon May 13 08:45:55 2024
+Wed May 15 21:35:57 2024

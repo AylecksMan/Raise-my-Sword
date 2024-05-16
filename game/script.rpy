@@ -51,6 +51,9 @@ label start:
 
                         "Jump to fight":
                             jump chap1
+
+                        "jump chap1.1":
+                            jump chap1_1
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.

@@ -557,7 +557,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made by yo momma")
+            text _("Made by Matthew, Alex, and Ben")
 
 
 style about_label is gui_label

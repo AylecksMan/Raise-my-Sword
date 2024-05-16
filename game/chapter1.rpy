@@ -24,17 +24,22 @@ label chap1_1:
 
     mc "Man, that was really scary."
     "Someone walks up to you..."
-    s “ermmmm hey there, [mc]~!”
-    s “Hows it going??”
+
+    show suzan
+
+    ##TODO fix capitalization
+
+    s "ermmmm hey there, [mc]~!"
+    s "Hows it going??"
     mc "erm... it's going-"
-    s “sooooo ermmmmmm yknow that skibbidy bar cafe that opened up nearby???~”
-    s “did you maybe wanna ermmm, go there together sometime??~”
+    s "sooooo ermmmmmm yknow that skibbidy bar cafe that opened up nearby???~"
+    s "did you maybe wanna ermmm, go there together sometime??~"
 
     menu:
-        "Sure?"
+        "Sure?":
             jump chap1suzancafe
 
-        "EWWWWWW! NO."
+        "EWWWWWW! NO.":
             s "boo hoo hoo hoy!"
 
     "Suzan runs off."
@@ -44,3 +49,10 @@ label walkhome:
     "The work day ends, and you set off to walk back home."
     "But halfway there, the streetlights begin to flicker violently."
     ""
+    ##TODO add in the rest of the script
+
+
+label chap1suzancafe:
+    s "Omg really??"
+    ##TODO add in story to get to cafe
+    ##TODO make a cafe bg

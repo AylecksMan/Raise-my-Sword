@@ -88,7 +88,7 @@ label aftername:
 
     g "Hey kid, {w}it seems you are in trouble."
 
-    g "prepare to get poo-poo pee-peed!!!!"
+    g "Prepare to get poo-poo pee-peed!!!!"
 
     mc "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
 
