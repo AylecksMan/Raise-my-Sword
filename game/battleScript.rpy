@@ -55,18 +55,22 @@ label battle_game_1:
 
     scene black
 
+
     "You feel power surge though your BALLS..."
     "and then..."
     "You RAISE YOUR SWORD!!!"
+
+    msy "Heh, pretty cool sword huh? I bestowed it to you myself!"
 
     jump battle_1_loop
 
 
 label battle_1_loop:
-    scene alley with fade
+    scene alley with squares
     #### Let's show the game screen.
     #
     show screen simple_stats_screen
+
 
     #### The game loop.
     # It will exist till both enemies have more than 0 hp.
@@ -108,6 +112,8 @@ label battle_1_loop:
 
         else:
             mc "night-night gronky-poo"
+            g "You baka!"
+            g "Don't forget who gave you that power!"
             mc "erm, what the sigma"
             "([health_potions] health potions left)"
 
