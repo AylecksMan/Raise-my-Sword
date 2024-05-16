@@ -68,7 +68,8 @@ label battle_game_1:
 label battle_1_loop:
     scene alley with squares
     #### Let's show the game screen.
-    #
+    show gronk
+    ##TODO make gronk like flash red or maybe shake when he takes damage and same for the mc
     show screen simple_stats_screen
 
 
