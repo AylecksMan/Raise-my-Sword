@@ -1,24 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/battleScript.rpy", line 63, in script
-    msy "Heh, pretty cool sword huh? I bestowed it to you myself!"
-Exception: Sayer 'msy' is not defined.
+  File "game/chapter2.rpy", line 10, in script
+    jump battle2
+ScriptError: could not find label 'battle2'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/battleScript.rpy", line 63, in script
-    msy "Heh, pretty cool sword huh? I bestowed it to you myself!"
-  File "D:\Renpy Engine\renpy-8.0.3-sdk\renpy\ast.py", line 2557, in execute
-    Say.execute(self)
-  File "D:\Renpy Engine\renpy-8.0.3-sdk\renpy\ast.py", line 575, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "D:\Renpy Engine\renpy-8.0.3-sdk\renpy\ast.py", line 464, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'msy' is not defined.
+  File "game/chapter2.rpy", line 10, in script
+    jump battle2
+  File "C:\Users\Tienm\Downloads\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\ast.py", line 1698, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\Tienm\Downloads\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'battle2'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
-Raise my Sword 1.0
-Wed May 15 20:40:11 2024
+Raise my Sword 1.0.1
+Fri May 17 13:47:23 2024

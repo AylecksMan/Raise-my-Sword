@@ -26,13 +26,13 @@ screen simple_stats_screen:
         xalign 0.99 yalign 0.05
         xminimum 220 xmaximum 220
         vbox:
-            text "gronk" size 22 xalign 0.5
+            text "unknown" size 22 xalign 0.5
             null height 5
             hbox:
                 bar:
                     xmaximum 130
-                    value gronk_hp
-                    range gronk_max_hp
+                    value unknown_hp
+                    range unknown_max_hp
                     left_gutter 0
                     right_gutter 0
                     thumb None
@@ -40,47 +40,36 @@ screen simple_stats_screen:
 
                 null width 5
 
-                text "[gronk_hp] / [gronk_max_hp]" size 16
+                text "[unknown_hp] / [unknown_max_hp]" size 16
 
-    text "You vs. gronk" xalign 0.5 yalign 0.05 size 30
+    text "You vs. unknown" xalign 0.5 yalign 0.05 size 30
 
-# The game starts here.
-label battle_game_1:
-    #### Some variables that describes the game state.
-    $ gronk_max_hp = 30
-    $ mc_max_hp = 50
-    $ gronk_hp = gronk_max_hp
+label battle_game_2:
+    $ unknown_max_hp = 50
+    $ mc_max_hp = 75
+    $ unknown_hp = unknown_max_hp
     $ mc_hp = mc_max_hp
     $ health_potions = 13
 
-    scene black
+    scene black with fade
 
+    mc "..."
+    mc "I guess it's that time again."
 
-    "You feel power surge though your BALLS..."
-    "and then..."
-    "You RAISE YOUR SWORD!!!"
+    jump battle_2_loop
 
-    mys "Heh, pretty cool sword huh? I bestowed it to you myself!"
+label battle_2_loop:
 
-    jump battle_1_loop
+    scene black with squares
 
+    #show monster
 
-label battle_1_loop:
-    scene alley with squares
-    #### Let's show the game screen.
-    show gronk
-    ##TODO make gronk like flash red or maybe shake when he takes damage and same for the mc
     show screen simple_stats_screen
-
-
-    #### The game loop.
-    # It will exist till both enemies have more than 0 hp.
-    #
-    while (gronk_hp > 0) and (mc_hp > 0):
+    while (unknown_hp > 0) and (mc_hp > 0):
 
         menu:
             "Attack":
-                $ gronk_hp -= 2
+                $ unknown_hp -= 2
                 mc "K-y-aaa!!!11 (damage dealt - 2hp)"
 
             "Restore Health ([health_potions] health potions left)" if health_potions > 0:
@@ -90,38 +79,36 @@ label battle_1_loop:
 
             "Use lucky ultimate!":
                 if renpy.random.randint(1, 4) > 3:
-                    $ gronk_hp -= 10
-                    g "Owie!!!"
+                    $ unknown_hp -= 15
+                    "You damage the unknown creature."
                 else:
-                    g "haha u missed :p"
+                    "You miss your ultimate."
 
-        $ gronk_damage = renpy.random.randint(1, 6)
+        $ unknown_damage = renpy.random.randint(1, 5)
 
-        $ mc_hp -= gronk_damage
+        $ mc_hp -= unknown_damage
 
-        g "RrrrrRRrrrr! {i}*gronk bites you*{/i} (damage dealt - [gronk_damage]hp)"
+        "{i}*unknown slashes you*{/i} (damage dealt - [unknown_damage]hp)"
     #
     ####
 
     hide screen simple_stats_screen
 
-    if gronk_hp <= 0:
+    if unknown_hp <= 0:
         if mc_hp <= 0:
             "Double KO"
             "Recommencing battle..."
-            jump battle_game_1
+            jump battle_game_2
 
         else:
-            mc "night-night gronky-poo"
-            g "You baka!"
-            g "Don't forget who gave you that power!"
-            mc "erm, what the sigma"
+
             "([health_potions] health potions left)"
 
     else:
-        g "Om-nom-nom-nom {i}*gronk ate you all up*{/i} (along with the basket, of course...)"
+        "{i}*The unknown creatures wins.*{/i}"
+        "Recommencing battle..."
+        jump battle_game_2
 
-    jump battle_1_ending
 
-label battle_1_ending:
-    jump chap1_1
+    jump credits
+

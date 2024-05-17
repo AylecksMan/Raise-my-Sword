@@ -23,6 +23,7 @@ label chap1_1:
     scene office with fade
 
     mc "Man, that was really scary."
+    mc "Out of all the things in this world, why did I have to dream about that?"
     "Someone walks up to you..."
 
     show suzan
@@ -45,14 +46,12 @@ label chap1_1:
     "Suzan runs off."
     mc "Heheheha!"
 
-label walkhome:
-    "The work day ends, and you set off to walk back home."
-    "But halfway there, the streetlights begin to flicker violently."
-    ""
-    ##TODO add in the rest of the script
+    jump chap2
 
 
 label chap1suzancafe:
     s "Omg really??"
     ##TODO add in story to get to cafe
     ##TODO make a cafe bg
+
+    jump chap2
