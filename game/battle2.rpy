@@ -1,6 +1,6 @@
 ﻿define m = Character("You")
 
-screen simple_stats_screen:
+screen simple_stats_screen_2:
     frame:
         xalign 0.01 yalign 0.05
         xminimum 220 xmaximum 220
@@ -64,7 +64,7 @@ label battle_2_loop:
 
     #show monster
 
-    show screen simple_stats_screen
+    show screen simple_stats_screen_2
     while (unknown_hp > 0) and (mc_hp > 0):
 
         menu:
@@ -92,7 +92,7 @@ label battle_2_loop:
     #
     ####
 
-    hide screen simple_stats_screen
+    hide screen simple_stats_screen_2
 
     if unknown_hp <= 0:
         if mc_hp <= 0:

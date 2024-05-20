@@ -1,5 +1,8 @@
 ﻿label chap2:
     label walkhome:
+
+    scene black with fade
+
     "The work day ends, and you set off to walk back home."
     "The streets are busy with people going home during the evening rush hour."
     "But halfway there, the streetlights begin to flicker violently."
