@@ -25,6 +25,7 @@ define e = Character("Eileen")
 define g = Character("Gronk")
 define s = Character("Suzan")
 define u = Character("Unknown")
+define b = Character("The Boss")
 
 # The game starts here.
 
@@ -55,6 +56,8 @@ label start:
 
                         "jump chap1.1":
                             jump chap1_1
+                        "jump to chap2":
+                            jump chap2
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
@@ -63,7 +66,7 @@ label credits:
     scene bg room
 
     "yeah this is credits i swear"
-
+    "developed by alex, ben, and matthew"
     "test Balls"
 
 

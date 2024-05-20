@@ -1,6 +1,6 @@
 ﻿define m = Character("You")
 
-screen simple_stats_screen_2:
+screen simple_stats_screen_3:
     frame:
         xalign 0.01 yalign 0.05
         xminimum 220 xmaximum 220
@@ -26,13 +26,13 @@ screen simple_stats_screen_2:
         xalign 0.99 yalign 0.05
         xminimum 220 xmaximum 220
         vbox:
-            text "unknown" size 22 xalign 0.5
+            text "boss" size 22 xalign 0.5
             null height 5
             hbox:
                 bar:
                     xmaximum 130
-                    value unknown_hp
-                    range unknown_max_hp
+                    value boss_hp
+                    range boss_max_hp
                     left_gutter 0
                     right_gutter 0
                     thumb None
@@ -40,75 +40,83 @@ screen simple_stats_screen_2:
 
                 null width 5
 
-                text "[unknown_hp] / [unknown_max_hp]" size 16
+                text "[boss_hp] / [boss_max_hp]" size 16
 
-    text "You vs. unknown" xalign 0.5 yalign 0.05 size 30
+    text "You vs. boss" xalign 0.5 yalign 0.05 size 30
 
-label battle_game_2:
-    $ unknown_max_hp = 50
+label battle_game_3:
+    $ boss_max_hp = 100
     $ mc_max_hp = 75
-    $ unknown_hp = unknown_max_hp
+    $ boss_hp = boss_max_hp
     $ mc_hp = mc_max_hp
     $ health_potions = 13
 
     scene black with fade
 
-    mc "..."
-    mc "I guess it's that time again."
+    jump battle_3_loop
 
-    jump battle_2_loop
-
-label battle_2_loop:
+label battle_3_loop:
 
     scene black with squares
 
     #show monster
 
-    show screen simple_stats_screen_2
-    while (unknown_hp > 0) and (mc_hp > 0):
+    show screen simple_stats_screen_3
+    while (boss_hp > 0) and (mc_hp > 0):
 
         menu:
             "Attack":
-                $ unknown_hp -= 3
+                $ boss_hp -= 4
                 mc "K-y-aaa!!!11 (damage dealt - 2hp)"
 
             "Restore Health ([health_potions] health potions left)" if health_potions > 0:
-                $ mc_hp = min(mc_hp+5, mc_max_hp)
+                $ mc_hp = min(mc_hp+6, mc_max_hp)
                 $ health_potions -= 1
                 mc "Mmm, tasty... (restore 5hp)"
 
             "Use lucky ultimate!":
                 if renpy.random.randint(1, 4) > 3:
-                    $ unknown_hp -= 15
-                    "You damage the unknown creature."
+                    $ boss_hp -= 20
+                    "You damage the boss."
                 else:
                     "You miss your ultimate."
+            "Flip a coin (Heads = win; tails = lose)":
+                if (renpy.random.randint(1, 2)) > 1:
+                    "Tails!"
+                    $ mc_hp -= 1000000
+                    "You lose..."
+                    "Recommencing battle."
+                    jump battle_game_3
+                else:
+                    "Heads!"
+                    $ boss_hp -= 1000000
+                    "You win!"
+                    jump credits
 
-        $ unknown_damage = renpy.random.randint(1, 5)
+        $ boss_damage = renpy.random.randint(1, 5)
 
-        $ mc_hp -= unknown_damage
+        $ mc_hp -= boss_damage
 
-        "{i}*unknown slashes you*{/i} (damage dealt - [unknown_damage]hp)"
+        "{i}*The boss slaps you*{/i} (damage dealt - [boss_damage]hp)"
     #
     ####
 
-    hide screen simple_stats_screen_2
+    hide screen simple_stats_screen_3
 
-    if unknown_hp <= 0:
+    if boss_hp <= 0:
         if mc_hp <= 0:
             "Double KO"
             "Recommencing battle..."
-            jump battle_game_2
+            jump battle_game_3
 
         else:
 
             "([health_potions] health potions left)"
 
     else:
-        "{i}*The unknown creatures wins.*{/i}"
+        "{i}*The boss creatures wins.*{/i}"
         "Recommencing battle..."
-        jump battle_game_2
+        jump battle_game_3
 
 
-    jump finalChapter
-
+    jump credits
