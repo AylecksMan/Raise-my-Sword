@@ -57,7 +57,15 @@ label battle_game_3:
 
 label battle_3_loop:
 
-    scene black with squares
+    play music boss
+
+    scene airman with squares
+
+    mc "IT WAS AIRMAN ALL ALONG?"
+
+    am "MWEHEHEHE YEAS IT WAS I, AIRMAN"
+
+    am "And as the saying goes, {w}YOU CAN'T DEFEAT AIRMAN!"
 
     #show monster
 
@@ -117,6 +125,8 @@ label battle_3_loop:
         "{i}*The boss creatures wins.*{/i}"
         "Recommencing battle..."
         jump battle_game_3
+
+
 
 
     jump credits

@@ -22,6 +22,8 @@ label chap1_1:
     "*Shudders*"
     scene office with fade
 
+    play music regular
+
     mc "Man, that was really scary."
     mc "Out of all the things in this world, why did I have to dream about that?"
     "Someone walks up to you..."
@@ -51,6 +53,10 @@ label chap1_1:
 
 label chap1suzancafe:
     s "Omg really??"
+
+    s "W-wait I was joking anyways, ahaha!"
+
+    s "Sorry BYE!"
     ##TODO add in story to get to cafe
     ##TODO make a cafe bg
 

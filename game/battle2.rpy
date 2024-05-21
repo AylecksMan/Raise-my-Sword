@@ -62,7 +62,9 @@ label battle_2_loop:
 
     scene black with squares
 
-    #show monster
+    play music gronk
+
+    show dark
 
     show screen simple_stats_screen_2
     while (unknown_hp > 0) and (mc_hp > 0):
