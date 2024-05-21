@@ -52,8 +52,8 @@ label start:
                         "Let me rethink this...":
                             jump nameMC
 
-                        "Jump to fight":
-                            jump chap1
+                     ##   "Jump to fight":
+                      ##      jump chap1
 
                      ##   "jump chap1.1":
                        ##     jump chap1_1
