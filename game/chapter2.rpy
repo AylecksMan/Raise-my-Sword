@@ -21,7 +21,6 @@
     "Something springs out and attacks you!"
 
     jump battle_game_2
-    ##TODO add in the rest of the script
 
 label finalChapter:
 

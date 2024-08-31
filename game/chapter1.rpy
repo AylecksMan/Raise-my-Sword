@@ -30,20 +30,18 @@ label chap1_1:
 
     show suzan
 
-    ##TODO fix capitalization
-
-    s "ermmmm hey there, [mc]~!"
+    s "Ermmmm hey there, [mc]~!"
     s "Hows it going??"
-    mc "erm... it's going-"
-    s "sooooo ermmmmmm yknow that skibbidy bar cafe that opened up nearby???~"
-    s "did you maybe wanna ermmm, go there together sometime??~"
+    mc "Erm... it's going-"
+    s "Sooooo ermmmmmm yknow that skibbidy bar cafe that opened up nearby???~"
+    s "Did you maybe wanna ermmm, go there together sometime??~"
 
     menu:
         "Sure?":
             jump chap1suzancafe
 
         "EWWWWWW! NO.":
-            s "boo hoo hoo hoy!"
+            s "Boo hoo hoo hoy!"
 
     "Suzan runs off."
     mc "Heheheha!"
