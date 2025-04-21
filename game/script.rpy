@@ -24,6 +24,9 @@
 define e = Character("Eileen")
 define g = Character("Gronk")
 define s = Character("Suzan")
+define u = Character("Unknown")
+define b = Character("The Boss")
+define am = Character("Airman")
 
 # The game starts here.
 
@@ -49,21 +52,44 @@ label start:
                         "Let me rethink this...":
                             jump nameMC
 
-                        "Jump to fight":
-                            jump chap1
+                     ##   "Jump to fight":
+                      ##      jump chap1
 
-                        "jump chap1.1":
-                            jump chap1_1
+                     ##   "jump chap1.1":
+                       ##     jump chap1_1
+                        ##"jump to chap2":
+                          ##  jump chap2
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 label credits:
 
-    scene bg room
+    hide screen simple_stats_screen_3
+
+
+    scene dead
+
+    play music credits
+
+    "Airman has finally been defeated!"
+
+    "The town is now saved from future attacks from slimes, Gronk, and Airman!"
+
+    "Thank you [mc]!"
+
+    scene bedroomnight with fade
+
+
 
     "yeah this is credits i swear"
+    "developed by alex, ben, and matthew"
+    "Developed using Renpy 8.2.1"
+    "..."
 
-    "test Balls"
+    scene black with fade
 
+    stop music
+
+    jump splashscreen
 
     return

@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 55: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "jump chap1.1"
-                  ^
+File "game/chapter2.rpy", line 12: expected statement.
+    music alley
+               ^
+
+File "game/chapter2.rpy", line 30: expected statement.
+    music alley
+               ^
+
+File "game/chapter2.rpy", line 42: expected statement.
+    music regular
+                 ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Wed May 15 21:35:57 2024
+Tue May 21 00:23:12 2024

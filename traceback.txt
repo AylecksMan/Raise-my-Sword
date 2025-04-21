@@ -1,24 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/battleScript.rpy", line 63, in script
-    msy "Heh, pretty cool sword huh? I bestowed it to you myself!"
-Exception: Sayer 'msy' is not defined.
+  File "game/chapter1.rpy", line 57, in script
+    a "Sorry BYE!"
+Exception: Sayer 'a' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/battleScript.rpy", line 63, in script
-    msy "Heh, pretty cool sword huh? I bestowed it to you myself!"
-  File "D:\Renpy Engine\renpy-8.0.3-sdk\renpy\ast.py", line 2557, in execute
+  File "game/chapter1.rpy", line 57, in script
+    a "Sorry BYE!"
+  File "C:\Users\Quick\OneDrive\Documents\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
     Say.execute(self)
-  File "D:\Renpy Engine\renpy-8.0.3-sdk\renpy\ast.py", line 575, in execute
+  File "C:\Users\Quick\OneDrive\Documents\renpy-8.2.1-sdk\renpy\ast.py", line 575, in execute
     who = eval_who(self.who, self.who_fast)
-  File "D:\Renpy Engine\renpy-8.0.3-sdk\renpy\ast.py", line 464, in eval_who
+  File "C:\Users\Quick\OneDrive\Documents\renpy-8.2.1-sdk\renpy\ast.py", line 464, in eval_who
     raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'msy' is not defined.
+Exception: Sayer 'a' is not defined.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
-Raise my Sword 1.0
-Wed May 15 20:40:11 2024
+Raise my Sword 1.0.1
+Tue May 21 00:14:26 2024

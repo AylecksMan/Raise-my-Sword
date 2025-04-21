@@ -1,6 +1,4 @@
-﻿# Ren'Py automatically loads all script files ending with .rpy. To use this
-# file, define a label and jump to it from another file.
-label chap1:
+﻿label chap1:
 
     scene black with fade
 
@@ -22,37 +20,40 @@ label chap1_1:
     "*Shudders*"
     scene office with fade
 
+    play music regular
+
     mc "Man, that was really scary."
+    mc "Out of all the things in this world, why did I have to dream about that?"
     "Someone walks up to you..."
 
     show suzan
 
-    ##TODO fix capitalization
-
-    s "ermmmm hey there, [mc]~!"
+    s "Ermmmm hey there, [mc]~!"
     s "Hows it going??"
-    mc "erm... it's going-"
-    s "sooooo ermmmmmm yknow that skibbidy bar cafe that opened up nearby???~"
-    s "did you maybe wanna ermmm, go there together sometime??~"
+    mc "Erm... it's going-"
+    s "Sooooo ermmmmmm yknow that skibbidy bar cafe that opened up nearby???~"
+    s "Did you maybe wanna ermmm, go there together sometime??~"
 
     menu:
         "Sure?":
             jump chap1suzancafe
 
         "EWWWWWW! NO.":
-            s "boo hoo hoo hoy!"
+            s "Boo hoo hoo hoy!"
 
     "Suzan runs off."
     mc "Heheheha!"
 
-label walkhome:
-    "The work day ends, and you set off to walk back home."
-    "But halfway there, the streetlights begin to flicker violently."
-    ""
-    ##TODO add in the rest of the script
+    jump chap2
 
 
 label chap1suzancafe:
     s "Omg really??"
+
+    s "W-wait I was joking anyways, ahaha!"
+
+    s "Sorry BYE!"
     ##TODO add in story to get to cafe
     ##TODO make a cafe bg
+
+    jump chap2

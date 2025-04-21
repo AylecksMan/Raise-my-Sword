@@ -16,6 +16,8 @@ label aftername:
 
     scene office with fade
 
+    play music regular
+
     "..."
 
     "This is the office"
@@ -36,10 +38,14 @@ label aftername:
 
     scene black with fade
 
+    stop music
+
     "One night after a long day at work."
 
 
     scene alley with fade
+
+    play music alley
 
     play sound manimsotired
 

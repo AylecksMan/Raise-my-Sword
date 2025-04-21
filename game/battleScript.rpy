@@ -42,7 +42,7 @@ screen simple_stats_screen:
 
                 text "[gronk_hp] / [gronk_max_hp]" size 16
 
-    text "Red Hood vs. gronk" xalign 0.5 yalign 0.05 size 30
+    text "You vs. gronk" xalign 0.5 yalign 0.05 size 30
 
 # The game starts here.
 label battle_game_1:
@@ -56,7 +56,7 @@ label battle_game_1:
     scene black
 
 
-    "You feel power surge though your BALLS..."
+    "You feel power surge though yourself..."
     "and then..."
     "You RAISE YOUR SWORD!!!"
 
@@ -67,8 +67,12 @@ label battle_game_1:
 
 label battle_1_loop:
     scene alley with squares
+
+    play music gronk2
+
     #### Let's show the game screen.
-    #
+    show gronk
+    ##TODO make gronk like flash red or maybe shake when he takes damage and same for the mc
     show screen simple_stats_screen
 
 
